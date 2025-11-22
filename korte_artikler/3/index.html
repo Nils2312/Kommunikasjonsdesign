@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alt begynte med én melding</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@400&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <section class="chat-section">
+    <div class="message jonas">yo, blir du med i kveld?</div>
+    <div class="message me">vet ikke ass</div>
+    <div class="message jonas">brooo kom igjeeen</div>
+    <div class="message me">må egentlig lese</div>
+    <div class="message jonas">hahaha drit i det, du trenger pause 😂</div>
+    <div class="message me">mamma klikker om jeg failer igjen</div>
+    <div class="message jonas">kom igjen daa, har fått tak i noen sterke greier...</div>
+  </section>
+
+  <section class="intro">
+    <h1>Alt begynte med én melding</h1>
+    <p class="byline">
+      <span class="name1">NILS KRISTIAN BJØRO,</span><span class="role1"> utvikling, design & reportasjeleder</span><br>
+      <span class="name1">LUCAS ALEXANDER ERIKSEN KJÆR,</span><span class="role1"> design</span><br>
+      <span class="name1">ISAK HANSEN BARABAD,</span><span class="role1"> journalist</span><br>
+      <span class="name1">TOMASZ GAJOS,</span><span class="role1"> journalist</span>
+    <p class="date1"><br>22. september 2025</p>
+    </p>
+    <p>
+      Vi gikk på barneskolen sammen. Han var den som alltid fikk alle til å le.
+      <br><br>
+      Men på ungdomsskolen begynte ting å endre seg. Først var det bare litt gøy. Så ble det alvor.
+      <br><br>
+      Dette er historien om en gutt som prøvde å finne en pause – og nesten forsvant helt.
+      <br><br>
+      Personen i denne historien ønsker å være anonym. <br>Navn og samtaler er endret for å beskytte de involverte.
+    </p>
+    <p id="advarsel"><strong>Advarsel:</strong> Denne fortellingen inneholder skildringer av rus og psykisk helse.</p>
+    <section class="sound-toggle">
+      <button id="enableSound" class="enable-sound">
+        <img src="filer/off.png" alt="Lyd av" class="sound-icon">
+        <span class="sound-text">Lyd av</span>
+      </button>
+    </section>
+  </section>
+  <audio id="toggleSound" src="filer/add.mp3" preload="auto"></audio>
+
+  <section class="notification">
+    <img src="filer/notifikasjon1.png" alt="Varsel" class="notification-img">
+    <audio id="notif-sound" src="filer/notifikasjon3.mp3" preload="auto" muted></audio>
+  </section>
+
+  <section class="chat-group">
+    <div class="chat-date">12. sep. 2017</div>
+
+    <div class="chat-msg other">
+      <img src="filer/profilbilde3.png" alt="Emil" class="avatar">
+      <div class="bubble-wrap">
+        <div class="name">Emil</div>
+        <div class="bubble">haha 😂</div>
+
+        <div class="image-wrapper">
+          <img src="filer/bilde1.png" class="chat-image" alt="Meme-bilde">
+          <div class="image-overlay">
+            <span class="icon">+</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chat-msg me">
+      <div class="bubble">bruh</div>
+    </div>
+
+    <div class="chat-msg other">
+      <img src="filer/profilbilde3.png" alt="Emil" class="avatar">
+      <div class="bubble-wrap">
+        <div class="name">Emil</div>
+        <div class="bubble">😂😂</div>
+      </div>
+    </div>
+
+    <div class="chat-msg me">
+      <div class="bubble">joine i kveld? orker ikke mer lekser</div>
+    </div>
+
+    <div class="chat-msg other">
+      <img src="filer/profilbilde1.png" alt="Sander" class="avatar">
+      <div class="bubble-wrap">
+        <div class="name">Sander</div>
+        <div class="bubble">bruh, vi har jo fagsamtale i morgen</div>
+      </div>
+    </div>
+
+    <div class="chat-msg other">
+      <img src="filer/profilbilde2.png" alt="Marius" class="avatar">
+      <div class="bubble-wrap">
+        <div class="name">Marius</div>
+        <div class="bubble">shit, det er sant. da må jeg øve</div>
+      </div>
+    </div>
+
+    <div class="chat-msg me">
+      <div class="bubble">kom igjen, har snakket med Jonas</div>
+    </div>
+
+    <div class="chat-msg other">
+      <img src="filer/profilbilde3.png" alt="Emil" class="avatar">
+      <div class="bubble-wrap">
+        <div class="name">Emil</div>
+        <div class="bubble">Jonas? Han fra 9C?</div>
+      </div>
+    </div>
+
+    <div class="chat-msg me">
+      <div class="bubble-wrap">
+        <div class="bubble">ja, han har fikset noen greier</div>
+        <div class="image-wrapper">
+          <img src="filer/bilde2.png" class="chat-image" alt="Ølbilde">
+          <div class="image-overlay">
+            <span class="icon">+</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="chat-msg other">
+      <img src="filer/profilbilde2.png" alt="Marius" class="avatar">
+      <div class="bubble-wrap">
+        <div class="name">Marius</div>
+        <div class="bubble">dæven, mamma hadde klikket</div>
+      </div>
+    </div>
+
+    <div class="chat-msg other">
+      <img src="filer/profilbilde1.png" alt="Sander" class="avatar">
+      <div class="bubble-wrap">
+        <div class="name">Sander</div>
+        <div class="bubble">👀</div>
+      </div>
+    </div>
+
+    <div class="chat-msg other">
+      <img src="filer/profilbilde3.png" alt="Emil" class="avatar">
+      <div class="bubble-wrap">
+        <div class="name">Emil</div>
+        <div class="bubble">hva skal dere gjøre?</div>
+      </div>
+    </div>
+
+    <div class="chat-msg me">
+      <div class="bubble">vet ikke, drikke litt øl og spille xbox</div>
+    </div>
+
+    <div class="chat-msg other">
+      <img src="filer/profilbilde1.png" alt="Sander" class="avatar">
+      <div class="bubble-wrap">
+        <div class="name">Sander</div>
+        <div class="bubble">damn</div>
+      </div>
+    </div>
+
+    <div class="chat-msg me">
+      <div class="bubble-wrap">
+        <div class="bubble">se hva Jonas sendte meg i går</div>
+        <div class="video-wrapper">
+          <video class="chat-video">
+            <source src="filer/video1.mp4" type="video/mp4">
+          </video>
+          <div class="video-overlay">
+            <span class="play-icon">▶</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="chat-msg other">
+      <img src="filer/profilbilde3.png" alt="Emil" class="avatar">
+      <div class="bubble-wrap">
+        <div class="name">Emil</div>
+        <div class="bubble">what 😳 hvor får han tak i det?</div>
+      </div>
+    </div>
+
+    <div class="chat-msg me">
+      <div class="bubble">vet ikke, skal kanskje prøve det</div>
+    </div>
+  </section>
+
+  <section class="story-text">
+    <p>
+      De begynte å henge mer sammen etter skolen.<br> <br>
+      Først var det uskyldig, bare noen øl og litt Xbox.<br> <br>
+      Så kom rusen.<br> <br>
+      For ham ble det en pause fra alt: presset hjemme, forventningene, karakterene som sank.<br> <br>
+      Skolen ble tyngre, og det som startet som litt gøy, begynte å ta over.
+    </p>
+  </section>
+
+  <section class="notification-section second">
+    <img src="filer/notifikasjon2.png" alt="Varsel" class="notification-img">
+    <audio id="notifSound2" src="filer/notifikasjon4.mp3" preload="auto" muted></audio>
+  </section>
+
+  <section class="grade-section">
+    <div class="grade-card">
+      <h2><strong>MAT1011</strong> – Kapittelprøve Algebra</h2>
+      <p class="date">Vurdert 12. september 2017 18:39</p>
+
+      <div class="grade-box">2 -</div>
+
+      <h3>Tilbakemelding</h3>
+      <p>
+        Du har vist at du kan noen grunnleggende regler, men mangler forståelse når oppgavene blir mer sammensatte.
+        Flere slurvefeil trekker karakteren ned.
+      </p>
+      <p>
+        Totalt sett akkurat nok til å bestå, men du må øve mer for å komme opp på et stabilt nivå.
+      </p>
+    </div>
+  </section>
+
+  <section class="story-text second">
+    <p>
+      Han stirret på skjermen lenge.<br><br>
+      2 minus.<br><br>
+      Han visste hva som kom til å skje hjemme.<br><br>
+      Det var ikke lenger bare skolen som føltes tung, alt gjorde det.
+    </p>
+  </section>
+
+  <section class="notification-section third">
+    <img src="filer/notifikasjon3.png" alt="Varsel" class="notification-img">
+    <audio id="notifSound3" src="filer/notifikasjon.mp3" preload="auto"></audio>
+  </section>
+
+  <section class="mom-section">
+    <div class="mom-message jonas">hei, jeg var innom itslearning i dag</div>
+    <div class="mom-message me">hvorfor</div>
+    <div class="mom-message jonas">så at du fikk 2– på matteprøven</div>
+    <div class="mom-message me">ja</div>
+    <div class="mom-message jonas">hva skjedde? du sa du hadde øvd</div>
+    <div class="mom-message me">jeg gjorde det, men det gikk dritdårlig tydeligvis</div>
+    <div class="mom-message jonas">du må jobbe mer jevnt, ikke bare dagen før</div>
+    <div class="mom-message me">jeg prøvde mamma</div>
+    <div class="mom-message jonas">jeg vet, men du må legge inn mer tid. snakket med pappa også</div>
+    <div class="mom-message me">orker ikke snakke om det nå</div>
+    <div class="mom-message jonas">greit, men vi må finne en løsning. vi kan se på oppgavene sammen i helga og finne ut
+      av det. vil du at vi skal finne en som kan hjelpe deg med matten?</div>
+    <div class="mom-message me">nei, jeg har sagt at jeg ikke vil det</div>
+    <div class="mom-message jonas">ok. men vi må gjøre noe. det blir bare vanskeligere på videregående</div>
+    <div class="mom-message me">ja</div>
+  </section>
+
+  <section class="notification-section fourth">
+    <img src="filer/notifikasjon4.png" alt="Varsel" class="notification-img">
+    <audio id="notifSound4" src="filer/notifikasjon.mp3" preload="auto"></audio>
+  </section>
+
+  <section class="dad-section">
+    <div class="dad-message jonas">Er du snart hjemme?</div>
+    <div class="dad-message me">nei, kommer hjem senere i dag</div>
+    <div class="dad-message jonas">mamma sa du fikk 2– i matte</div>
+    <div class="dad-message me">ja</div>
+    <div class="dad-message jonas">hva skjedde? du hadde øvd, sa du</div>
+    <div class="dad-message me">vet ikke, det bare gikk dårlig</div>
+    <div class="dad-message jonas">du må ta det mer seriøst. 2– er for lavt</div>
+    <div class="dad-message me">jeg prøvde jo</div>
+    <div class="dad-message jonas">prøvde er ikke alltid nok</div>
+    <div class="dad-message me">ja</div>
+    <div class="dad-message jonas">du må finne ut hva som ikke funker. kanskje snakke med læreren?</div>
+    <div class="dad-message me">ok</div>
+    <div class="dad-message jonas">vi snakkes når du kommer hjem</div>
+  </section>
+
+  <section class="story-text third">
+    <p>
+      Han la fra seg mobilen.<br><br>
+      Det føltes som alt han gjorde ble feil.<br><br>
+      Hos Jonas var det annerledes.<br>
+      Der var det aldri mas, aldri press.<br>
+      Bare stillhet – og rusen som gjorde alt borte for en stund.
+    </p>
+  </section>
+
+  <section class="snapchat-section">
+    <div class="snapchat-date">2. oktober 2017</div>
+
+    <div class="snap-msg jonas">
+      <span class="name">JONAS</span>
+      <p>yoo, møtes i morgen også?</p>
+    </div>
+
+    <div class="snap-msg me">
+      <span class="name">MEG</span>
+      <p>ja seff</p>
+    </div>
+
+    <div class="snap-msg jonas">
+      <span class="name">JONAS</span>
+      <p>det var dritlææættis i går 😂</p>
+    </div>
+
+    <div class="snap-msg me">
+      <span class="name">MEG</span>
+      <p>hahah ja, har du mer?</p>
+    </div>
+
+    <div class="snap-msg jonas">
+      <span class="name">JONAS</span>
+      <p>ofc bro, men har fått tak i noe annet</p>
+    </div>
+
+    <div class="snap-msg me">
+      <span class="name">MEG</span>
+      <p>hva da</p>
+    </div>
+
+    <div class="snap-msg jonas">
+      <span class="name">JONAS</span>
+
+      <div class="snap-body">
+        <p id="snaptekst">en kompis på videregående har skaffa meg kontakter. han selger noe enda sjukere</p>
+
+        <div class="image-wrapper snapbilde">
+          <img src="filer/bilde3.png" alt="Snap-bilde" class="chat-image snapbilde">
+          <div class="image-overlay"><span class="icon">+</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="snap-msg jonas">
+      <span class="name">JONAS</span>
+      <p>du får en helt annen opplevelse</p>
+    </div>
+
+    <div class="snap-msg me">
+      <span class="name">MEG</span>
+      <p>shit ja, kanskje jeg skal prøve det</p>
+    </div>
+
+    <div class="snap-msg jonas">
+      <span class="name">JONAS</span>
+      <p>ja, han sier det er syke greier</p>
+    </div>
+
+    <div class="snap-msg me">
+      <span class="name">MEG</span>
+      <p>er du sikker på at det er safe?</p>
+    </div>
+
+    <div class="snap-msg jonas">
+      <span class="name">JONAS</span>
+      <p>ja han sier det er safe 😎</p>
+    </div>
+
+    <div class="snap-msg me">
+      <span class="name">MEG</span>
+      <p>kjøør!</p>
+    </div>
+  </section>
+
+  <section class="story-text fourth">
+    <p>
+      Etter hvert hang de sammen oftere.<br><br>
+      Skolen, kveldene, helgene – alt begynte å handle om Jonas. De begynte å eksperimentere med nye ting.<br><br>
+      Han følte seg fri der.<br>
+      Endelig noen som ikke dømte ham.
+    </p>
+  </section>
+
+  <section class="gallery-section">
+    <div class="carousel" aria-label="Bildegalleri">
+      <button class="nav prev" aria-label="Forrige bilde">‹</button>
+
+      <div class="viewport">
+        <div class="track">
+          <div class="slide">
+            <img src="filer/bilde4.png" alt="Bilde 1">
+            <p class="slide-caption">Et av øyeblikkene der han satt alene og prøvde å koble av fra alt.</p>
+          </div>
+
+          <div class="slide">
+            <img src="filer/bilde5.png" alt="Bilde 2">
+            <p class="slide-caption">Xbox etter skolen var gøy i starten, men med tiden tok andre ting over.</p>
+          </div>
+
+          <div class="slide">
+            <img src="filer/bilde6.png" alt="Bilde 3">
+            <p class="slide-caption">Sammen begynte de å utforske ting de egentlig visste lite om.</p>
+          </div>
+
+          <div class="slide">
+            <img src="filer/bilde7.png" alt="Bilde 4">
+            <p class="slide-caption">For ham føltes det som frihet. For Jonas ble det starten på noe mye mørkere.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="nav next" aria-label="Neste bilde">›</button>
+    </div>
+
+    <div class="dots" role="tablist" aria-label="Bildeindekser">
+      <button class="dot active" aria-label="Gå til bilde 1" role="tab"></button>
+      <button class="dot" aria-label="Gå til bilde 2" role="tab"></button>
+      <button class="dot" aria-label="Gå til bilde 3" role="tab"></button>
+      <button class="dot" aria-label="Gå til bilde 4" role="tab"></button>
+    </div>
+  </section>
+
+  <section class="story-text fifth">
+    <p>
+      Over tid begynte ting å forandre seg.<br><br>
+      Jonas svarte sjeldnere.<br>
+      Når de møttes, virket han fjern, som om han ikke helt var der lenger.<br><br>
+      Han sa det gikk fint.<br>
+      Men alle kunne se at det ikke stemte.
+    </p>
+  </section>
+
+  <section class="notification-section fifth">
+    <img src="filer/notifikasjon1.png" alt="Varsel" class="notification-img">
+    <audio id="notifSound5" src="filer/notifikasjon3.mp3" preload="auto" muted></audio>
+  </section>
+
+  <section class="chat-group second">
+    <div class="chat-date">6. mars 2018</div>
+
+    <div class="chat-msg me">
+      <div class="bubble">se her</div>
+      <div class="image-wrapper">
+        <img src="filer/bilde8.png" class="chat-image" alt="Snap-bilde">
+        <div class="image-overlay">
+          <span class="icon">+</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="chat-msg other">
+      <img src="filer/profilbilde3.png" alt="Emil" class="avatar">
+      <div class="bubble-wrap">
+        <div class="name">Emil</div>
+        <div class="bubble">bro 😭</div>
+      </div>
+    </div>
+
+    <div class="chat-msg other">
+      <img src="filer/profilbilde1.png" alt="Sander" class="avatar">
+      <div class="bubble-wrap">
+        <div class="name">Sander</div>
+        <div class="bubble">du tuller, det er mandag?? 😳</div>
+      </div>
+    </div>
+
+    <div class="chat-msg me">
+      <div class="bubble">naah</div>
+    </div>
+
+    <div class="chat-msg other">
+      <img src="filer/profilbilde2.png" alt="Marius" class="avatar">
+      <div class="bubble-wrap">
+        <div class="name">Marius</div>
+        <div class="bubble">det der er ikke lurt ass</div>
+      </div>
+    </div>
+
+    <div class="chat-msg me">
+      <div class="bubble">chill, det er ikke farlig</div>
+    </div>
+
+    <div class="chat-msg other">
+      <img src="filer/profilbilde3.png" alt="Emil" class="avatar">
+      <div class="bubble-wrap">
+        <div class="name">Emil</div>
+        <div class="bubble">du har hengt for mye med Jonas 😂</div>
+      </div>
+    </div>
+
+    <div class="chat-msg me">
+      <div class="bubble">haha, kanskje</div>
+    </div>
+
+    <div class="chat-msg other">
+      <img src="filer/profilbilde1.png" alt="Sander" class="avatar">
+      <div class="bubble-wrap">
+        <div class="name">Sander</div>
+        <div class="bubble">har du snakka med han eller?</div>
+      </div>
+    </div>
+
+    <div class="chat-msg me">
+      <div class="bubble">ja, litt</div>
+    </div>
+
+    <div class="chat-msg other">
+      <img src="filer/profilbilde1.png" alt="Sander" class="avatar">
+      <div class="bubble-wrap">
+        <div class="name">Sander</div>
+        <div class="bubble">hva skjer egentlig med han?</div>
+      </div>
+    </div>
+
+    <div class="chat-msg me">
+      <div class="bubble">vet ikke helt, han sier det går greit</div>
+    </div>
+
+    <div class="chat-msg other">
+      <img src="filer/profilbilde3.png" alt="Emil" class="avatar">
+      <div class="bubble-wrap">
+        <div class="name">Emil</div>
+        <div class="bubble">var ikke han på sånn behandling igjen?</div>
+      </div>
+    </div>
+
+    <div class="chat-msg other">
+      <img src="filer/profilbilde1.png" alt="Sander" class="avatar">
+      <div class="bubble-wrap">
+        <div class="name">Sander</div>
+        <div class="bubble">jo, men de slapp han ut igjen fort, som vanlig 😭</div>
+      </div>
+    </div>
+
+    <div class="chat-msg other">
+      <img src="filer/profilbilde2.png" alt="Marius" class="avatar">
+      <div class="bubble-wrap">
+        <div class="name">Marius</div>
+        <div class="bubble">de lar han bare gå, helt sykt</div>
+      </div>
+    </div>
+
+    <div class="chat-msg other">
+      <img src="filer/profilbilde1.png" alt="Sander" class="avatar">
+      <div class="bubble-wrap">
+        <div class="name">Sander</div>
+        <div class="bubble">han trenger jo hjelp stakkars</div>
+      </div>
+    </div>
+
+    <div class="chat-msg other">
+      <img src="filer/profilbilde3.png" alt="Emil" class="avatar">
+      <div class="bubble-wrap">
+        <div class="name">Emil</div>
+        <div class="bubble">husker han som en helt annen fyr før</div>
+      </div>
+    </div>
+
+    <div class="chat-msg other">
+      <img src="filer/profilbilde1.png" alt="Sander" class="avatar">
+      <div class="bubble-wrap">
+        <div class="name">Sander</div>
+        <div class="bubble">ja word</div>
+      </div>
+    </div>
+
+    <div class="chat-msg me">
+      <div class="bubble">han sa han vurderte å prøve noen enda sterkere greier</div>
+    </div>
+
+    <div class="chat-msg other">
+      <img src="filer/profilbilde2.png" alt="Marius" class="avatar">
+      <div class="bubble-wrap">
+        <div class="name">Marius</div>
+        <div class="bubble">enda sterkere greier? hva mener du? 😳</div>
+      </div>
+    </div>
+
+    <div class="chat-msg me">
+      <div class="bubble">bare sa han vurderte det, ikke sikkert han gjorde det</div>
+    </div>
+
+    <div class="chat-msg other">
+      <img src="filer/profilbilde2.png" alt="Marius" class="avatar">
+      <div class="bubble-wrap">
+        <div class="name">Marius</div>
+        <div class="bubble">daaamn</div>
+      </div>
+    </div>
+
+    <div class="chat-msg other">
+      <img src="filer/profilbilde3.png" alt="Emil" class="avatar">
+      <div class="bubble-wrap">
+        <div class="name">Emil</div>
+        <div class="bubble">han tåler ikke sånt ass, ikke de greiene</div>
+      </div>
+    </div>
+
+    <div class="chat-msg other">
+      <img src="filer/profilbilde1.png" alt="Sander" class="avatar">
+      <div class="bubble-wrap">
+        <div class="name">Sander</div>
+        <div class="bubble">lurer fortsatt på hva han gjør nå</div>
+      </div>
+    </div>
+
+    <div class="chat-msg other">
+      <img src="filer/profilbilde3.png" alt="Emil" class="avatar">
+      <div class="bubble-wrap">
+        <div class="name">Emil</div>
+        <div class="bubble">word</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="story-text sixth">
+    <p>
+      Etter hvert ble det stille fra Jonas.<br>
+      Ingen visste helt hva som skjedde.<br>
+      Månedene gikk.<br>
+      Til slutt ble månedene til år. <br><br>
+      Han mistet mer og mer kontakten.<br>
+      Livet gikk videre — i hvert fall på utsiden.<br>
+      Men inni ham føltes alt som om det sto på pause.
+    </p>
+  </section>
+
+  <section class="music-section">
+    <div class="music-player">
+      <img src="filer/cover.png" alt="Album cover" class="cover">
+
+      <div class="progress">
+        <span id="current-time">0:00</span>
+        <input type="range" id="progress-bar" value="0" min="0" max="100">
+        <span id="total-time">-4:24</span>
+      </div>
+
+      <h3>Karma Police</h3>
+      <p class="artist">Radiohead</p>
+
+      <div class="controls">
+        <img src="filer/rewind.png" id="rewind" class="control-btn" alt="Rewind">
+        <img src="filer/play.png" id="play-pause" class="control-btn" alt="Play">
+        <img src="filer/forward.png" id="forward" class="control-btn" alt="Forward">
+      </div>
+
+      <div class="volume">
+        <img src="filer/lessvolume.png" id="vol-down" class="vol-btn" alt="Volume down">
+        <input type="range" id="volume-bar" value="50" min="0" max="100">
+        <img src="filer/morevolume.png" id="vol-up" class="vol-btn" alt="Volume up">
+      </div>
+
+      <audio id="audio" src="filer/radiohead.mp3"></audio>
+    </div>
+  </section>
+
+  <section class="story-text seventh">
+    <p>
+      Det var en helt vanlig torsdag.<br>
+      Han satt ute, hørte på Radiohead og tok et trekk.<br>
+      For første gang på lenge, føltes alt litt rolig.<br><br>
+      Men så kom varselet.
+    </p>
+  </section>
+
+  <section class="notification-section sixth">
+    <img src="filer/notifikasjon5.png" alt="Varsel" class="notification-img">
+    <audio id="notifSound6" src="filer/notifikasjon.mp3" preload="auto" muted></audio>
+  </section>
+
+  <section class="news-section reveal">
+    <div class="news-header"></div>
+
+    <div class="news-box">
+      <h1>NÅ: Ung mann død –<br>politiet mistenker rus</h1>
+      <h2>En person er omkommet, ifølge politiet</h2>
+      <p class="time">1 MIN SIDEN</p>
+      <hr>
+
+      <p>
+        Politiet rykket ut til en hendelse i natt etter meldinger om en mann som oppførte seg urolig i et boligområde.
+      </p>
+
+      <p>
+        – Da patruljen kom til stedet, fikk de ikke noe kontakt med ham, sier operasjonsleder i politiet.
+      </p>
+
+      <p>
+        Mannen, som er i slutten av tenårene, ble erklært død på stedet.
+      </p>
+
+      <p>
+        Politiet undersøker nå om rusmidler kan ha vært involvert.
+      </p>
+
+      <p>
+        – Vi har funnet gjenstander på stedet som tyder på det, sier operasjonslederen.
+      </p>
+
+      <p><em>Vi oppdaterer saken.</em></p>
+    </div>
+  </section>
+
+  <section class="story-text eighth">
+    <p>
+      Han leste overskriften flere ganger.<br>
+      Ordene føltes uvirkelige.<br><br>
+      Det sto ikke navnet hans.<br>
+      Men han visste hvem det var.
+    </p>
+  </section>
+
+  <section class="notification-section seventh">
+    <img src="filer/notifikasjon1.png" alt="Varsel" class="notification-img">
+    <audio id="notifSound7" src="filer/notifikasjon3.mp3" preload="auto" muted></audio>
+  </section>
+
+  <section class="chat-group-3">
+    <div class="chat-date-3">12. okt. 2020</div>
+
+    <div class="chat-msg-3 other">
+      <img src="filer/profilbilde1.png" alt="Sander" class="avatar-3">
+      <div class="bubble-wrap-3">
+        <div class="name-3">Sander</div>
+        <div class="bubble-3">Har dere sett nyhetene??</div>
+      </div>
+    </div>
+
+    <div class="chat-msg-3 other">
+      <img src="filer/profilbilde3.png" alt="Emil" class="avatar-3">
+      <div class="bubble-wrap-3">
+        <div class="name-3">Emil</div>
+        <div class="bubble-3">Ja, jeg fikk vite det for en time siden før de skrev om det</div>
+      </div>
+    </div>
+
+    <div class="chat-msg-3 other">
+      <img src="filer/profilbilde2.png" alt="Marius" class="avatar-3">
+      <div class="bubble-wrap-3">
+        <div class="name-3">Marius</div>
+        <div class="bubble-3">Hæ vet du hvem det er?</div>
+      </div>
+    </div>
+
+    <div class="chat-msg-3 me">
+      <div class="bubble-wrap-3">
+        <div class="bubble-3">Hva??</div>
+      </div>
+    </div>
+
+    <div class="chat-msg-3 other">
+      <img src="filer/profilbilde3.png" alt="Emil" class="avatar-3">
+      <div class="bubble-wrap-3">
+        <div class="name-3">Emil</div>
+        <div class="bubble-3">Ja, noen sa det er en fra skolen vår, det er alt jeg vet</div>
+      </div>
+    </div>
+
+    <div class="chat-msg-3 other">
+      <img src="filer/profilbilde2.png" alt="Marius" class="avatar-3">
+      <div class="bubble-wrap-3">
+        <div class="name-3">Marius</div>
+        <div class="bubble-3">Seriøst? Kødder du?</div>
+      </div>
+    </div>
+
+    <div class="chat-msg-3 other">
+      <img src="filer/profilbilde2.png" alt="Marius" class="avatar-3">
+      <div class="bubble-wrap-3">
+        <div class="name-3">Marius</div>
+        <div class="bubble-3">Vet du fra hvilken klasse?</div>
+      </div>
+    </div>
+
+    <div class="chat-msg-3 other">
+      <img src="filer/profilbilde3.png" alt="Emil" class="avatar-3">
+      <div class="bubble-wrap-3">
+        <div class="name-3">Emil</div>
+        <div class="bubble-3">Nei, det fikk jeg ikke vite</div>
+      </div>
+    </div>
+
+    <div class="chat-msg-3 other">
+      <img src="filer/profilbilde1.png" alt="Sander" class="avatar-3">
+      <div class="bubble-wrap-3">
+        <div class="name-3">Sander</div>
+        <div class="bubble-3">Det er ikke Jonas?</div>
+      </div>
+    </div>
+
+    <div class="chat-msg-3 me">
+      <div class="bubble-wrap-3">
+        <div class="bubble-3">Nei det kan det ikke være</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="story-text ninth">
+    <p>
+      Men det var det.<br><br>
+      Det var Jonas.<br><br>
+      Den kvelden stoppet alt.<br>
+      Lyden. Meldingene. Tankene.<br>
+      For første gang på lenge, føltes alt helt stille.
+    </p>
+    <section class="faktaboks-seksjon">
+      <div class="faktaboks">
+        <h3>Slik husker de ham</h3>
+        <ul>
+          <li>"Han var alltid den som fikk oss til å le"</li>
+          <li>"Jonas var en sånn fyr som aldri tålte stillhet – han måtte alltid finne på noe"</li>
+          <li>"Han brydde seg alltid om andre mennesker"</li>
+          <li>"Ingen av oss skjønte hvor dårlig han egentlig hadde det"</li>
+        </ul>
+      </div>
+      <button class="faktaboks-knapp">Vis mer</button>
+    </section>
+  </section>
+
+  <section class="notification-section eighth">
+    <img src="filer/notifikasjon6.png" alt="Varsel" class="notification-img">
+    <audio id="notifSound8" src="filer/notifikasjon1.mp3" preload="auto" muted></audio>
+  </section>
+
+  <section class="story-text tenth">
+    <p>
+      Ukene etterpå gikk i ett.<br>
+      Han sov lite.<br>
+      Skolen ble ubetydelig.<br><br>
+      Alt minnet ham om Jonas.<br>
+      Noen ganger føltes det som om han fortsatt skulle få en melding.<br><br>
+      Men så kom varselet som skulle endre livet hans.
+    </p>
+  </section>
+
+  <section class="notification-section ninth">
+    <img src="filer/notifikasjon7.png" alt="Varsel" class="notification-img">
+    <audio id="notifSound9" src="filer/notifikasjon2.mp3" preload="auto" muted></audio>
+  </section>
+
+  <section class="snapchat-section second">
+    <div class="snapchat-date">15. november 2020</div>
+
+    <div class="snap-msg elise">
+      <span class="name">ELISE</span>
+      <p>Hei, hvordan går det?</p>
+    </div>
+
+    <div class="snap-msg me">
+      <span class="name">MEG</span>
+      <p>Det går bra, hva skjer?</p>
+    </div>
+
+    <div class="snap-msg elise">
+      <span class="name">ELISE</span>
+      <p>Jeg lurte på om du ville finne på noe sammen til helgen? Hvis det passer 😊</p>
+    </div>
+
+    <div class="snap-msg me">
+      <span class="name">MEG</span>
+      <p>Ja, det tror jeg passer!</p>
+    </div>
+
+    <div class="snap-msg elise">
+      <span class="name">ELISE</span>
+      <p>Så koselig! ❤️❤️</p>
+    </div>
+  </section>
+
+  <section class="story-text eleventh">
+    <p>
+      Det var første gangen på lenge noen spurte.<br>
+      Han ble sittende og se på meldingen en stund.<br>
+      Til slutt skrev han ja.<br><br>
+      Ikke fordi alt var bra.<br>
+      Men fordi det var på tide å prøve igjen.
+    </p>
+  </section>
+
+  <section class="strek-section">
+    <div class="strek-container">
+      <div class="strek-overlay">
+        <img src="filer/strek.png" alt="Strek" class="strek-img">
+      </div>
+    </div>
+  </section>
+
+  <section class="story-text twelfth">
+    <p>
+      De begynte å møtes oftere.<br>
+      Etter hvert ble det mer.<br><br>
+      Hun ble en trygghet. Den første på lenge som fikk ham til å smile uten at han trengte noe for å klare det.<br><br>
+      I dag bor de sammen.<br><br>
+      Etter videregående tok han et fagbrev som elektriker.<br>
+      Nå jobber han som elektriker, og sier at livet endelig føles som hans eget igjen.
+      Nå kan han bruke hendene — uten å sitte stille.<br><br>
+      Noen ganger snakker de om Jonas. Ikke for å glemme, men for å huske hvor langt han har kommet.
+    </p>
+  </section>
+
+  <section class="strek2-section">
+    <div class="strek2-container">
+      <div class="strek2-overlay">
+        <img src="filer/strek2.png" alt="Strek 2" class="strek2-img">
+      </div>
+    </div>
+  </section>
+
+  <section class="story-text thirteenth">
+    <p>
+      Det er mange som sliter.<br>
+      Som kjenner på presset, stillheten, forventningene og som ikke vet hvem de skal snakke med.<br><br>
+      Noen klarer å finne veien ut. Andre gjør det ikke.<br><br>
+      Ingen burde måtte stå alene i det.<br><br>
+      Denne historien handler om én som rakk å snu – før det var for sent.
+
+      Men for Jonas kom hjelpen for sent.<br><br>
+
+      Han ble et resultat av et system som ikke fanget opp det alle kunne se.<br><br>
+
+      Et system som burde vært der da alt begynte å rakne, men som ikke var det.<br><br>
+      Og alt begynte med én melding.
+    </p>
+    <section class="faktaboks-seksjon">
+      <div class="faktaboks">
+        <h3>Bak historien</h3>
+        <ul>
+          <li>Denne fortellingen bygger på en sann historie fra da journalisten gikk på ungdomsskolen sammen med
+            hovedpersonen.
+          </li>
+          <li>Journalisten kjente Jonas litt – de gikk i samme tyskklasse og snakket av og til. Han husker ham som en
+            omtenksom og livlig gutt som fikk andre til å føle seg inkludert.</li>
+          <li>Meldinger og bilder er hentet fra virkelige samtaler og gruppechatter som journalisten har fått innsyn i.
+            For å beskytte de involverte er navn, meldinger og detaljer endret. Tidspunkter og datoer er også justert.
+          </li>
+          <li>Visuelle elementer som kan knyttes til rusmidler er bevisst gjort uklare for å ivareta etisk og pedagogisk
+            ansvar.</li>
+          <li>Prosjektet har ikke som mål å fremstille rus som noe positivt, men å vise hvordan press, forventninger
+            og psykisk vansker kan føre unge inn i vanskelige og destruktive mønstre.</li>
+          <li>Historien er laget for å skape refleksjon, ikke for å normalisere eller romantisere rusbruk.
+            Alle bilder og videoer er symbolske framstillinger av tematikk, ikke en oppfordring til bruk.</li>
+        </ul>
+      </div>
+      <button class="faktaboks-knapp">Vis mer</button>
+    </section>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
