@@ -1,0 +1,944 @@
+body {
+  margin: 0;
+  background-color: #E6F0FF;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #111;
+  line-height: 1.6;
+}
+
+.header-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 8rem auto 2rem auto;
+  padding: 0 1rem;
+}
+
+.header-image img {
+  max-width: 900px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.price-labels {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  max-width: 1900px;
+  pointer-events: none;
+}
+
+.price-top {
+  position: absolute;
+  top: 89%;
+  left: 51.2%;
+  transform: translateX(-50%);
+}
+
+.price-bottom {
+  position: absolute;
+  top: 29%;
+  left: 51.2%;
+  transform: translateX(-50%);
+}
+
+.price {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: clamp(1.4rem, 5vw, 2.4rem);
+  color: #23372F;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.price .decimal {
+  font-size: 0.5em;
+  position: relative;
+  top: -0.7em;
+  margin-left: 0.1rem;
+}
+
+@media (max-width: 1400px) {
+  .price {
+    font-size: clamp(1.2rem, 4vw, 2.2rem);
+  }
+
+  .price-top {
+    top: 89%;
+    margin-left: 14px;
+  }
+
+  .price-bottom {
+    top: 29%;
+    margin-left: 14px;
+  }
+}
+
+@media (max-width: 900px) {
+  .price {
+    font-size: clamp(1.2rem, 4vw, 2.2rem);
+  }
+
+  .price-top {
+    top: 89%;
+    margin-left: 10px;
+  }
+
+  .price-bottom {
+    top: 29%;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .price {
+    font-size: clamp(1.2rem, 4vw, 2.2rem);
+  }
+
+  .price-top {
+    top: 88.5%;
+    margin-left: 6px;
+  }
+
+  .price-bottom {
+    top: 28.5%;
+    margin-left: 6px;
+  }
+}
+
+.byline {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  padding: 0 1.5rem;
+  font-size: 0.89rem;
+  color: #111;
+  line-height: 0.4;
+}
+
+.byline .name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.byline .date {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-top: -15px;
+  margin-bottom: -20px;
+}
+
+.lede {
+  max-width: 600px;
+  margin: 2rem auto 4rem;
+  padding: 0 1.5rem;
+}
+
+.lede p {
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.article-section h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.7rem, 4vw, 1rem);
+  margin-bottom: 1rem;
+  line-height: 1.3;
+  color: #004952;
+}
+
+.article-section h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.2rem, 4vw, 1rem);
+  margin-bottom: 1rem;
+  line-height: 1.3;
+  color: #004952;
+}
+
+.article-section {
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+  color: #111;
+}
+
+.article-section p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.article-section2 {
+  max-width: 600px;
+  margin: 2.3rem auto;
+  padding: 0 1.5rem;
+  color: #111;
+}
+
+.article-section2 p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.receipt-section {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  max-width: 500px;
+  width: 100%;
+}
+
+.receipt-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.receipt-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.receipt-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2.00rem 2.9rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.item,
+.total {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+  color: #003366;
+  line-height: 2.7;
+}
+
+.item .price {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #003366;
+}
+
+.total .price {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #004952;
+}
+
+.price {
+  font-weight: 200;
+}
+
+.total {
+  margin-top: 1.5rem;
+  font-weight: 700;
+  border-top: 1px dashed #111;
+  border-bottom: 1px dashed #111;
+  padding: 1rem 0;
+  color: #004952;
+}
+
+.total .price {
+  font-weight: 700;
+  color: #004952;
+  margin-top: 5px;
+}
+
+.receipt-toggle {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.receipt-toggle button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin: 0 0.5rem;
+  padding: 0.7rem 1.4rem;
+  border: none;
+  border-radius: 0;
+  background: #C6D4E9;
+  color: #004952;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.receipt-toggle button:hover:not(.active) {
+  background: #aac0df;
+}
+
+.receipt-toggle button.active {
+  background: #004952;
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .receipt-section {
+    display: block;
+    max-width: 360px;
+    margin: 1.5rem auto;
+  }
+
+  .receipt-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .receipt-content {
+    padding: 1.5rem 1.8rem;
+  }
+
+  .item,
+  .total {
+    line-height: 1.8;
+    font-size: 0.95rem;
+  }
+
+  .total .price {
+    font-size: 1.4rem;
+  }
+}
+
+.receipt-source {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: -10px;
+  font-style: italic;
+}
+
+.handlekurv-seksjon {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.handlekurv-boks {
+  background: #FAFCFF;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem;
+  min-height: 520px;
+  border: 0;
+}
+
+.handlekurv-topp {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+}
+
+.handlekurv-tittel {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.35rem;
+  color: #111;
+}
+
+.handlekurv-antall {
+  font-weight: 700;
+}
+
+.handlekurv-feil {
+  min-height: 1.25rem;
+  font-size: 0.95rem;
+  color: #b00020;
+}
+
+.rad {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #FAFCFF;
+  padding: 0.8rem;
+  margin-bottom: 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  min-height: 90px;
+  box-sizing: border-box;
+}
+
+.rad--kurv+.rad--kurv {
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.rad-venstre {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rad-bilde {
+  width: 110px;
+  height: auto;
+  display: block;
+}
+
+.rad-tekst {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+}
+
+.rad-belop {
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 0.15rem;
+}
+
+.rad-beskrivelse {
+  font-size: 0.9rem;
+  color: #5b6b7b;
+}
+
+.forslag-tittel {
+  margin: 1.25rem 0 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #111;
+}
+
+.knapp {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.7rem 1.3rem;
+  min-width: 110px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  text-align: center;
+  transition: background .25s ease, color .25s ease, transform .02s ease;
+}
+
+.knapp--fjern {
+  background: #C6D4E9;
+  color: #004952;
+}
+
+.knapp--fjern:hover {
+  background: #AAC0DF;
+}
+
+.knapp--leggtil {
+  background: #004952;
+  color: #fff;
+}
+
+.knapp--leggtil:hover {
+  background: #007a78;
+}
+
+.handlekurv-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 1.25rem;
+  border-top: 1px dashed #111;
+  padding-top: 0.75rem;
+  font-size: 1.3rem;
+}
+
+.total-tekst {
+  font-weight: 700;
+  color: #111;
+}
+
+.total-belop {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: clamp(1.6rem, 6vw, 2.4rem);
+  color: #002b31;
+  display: inline-block;
+  transform-origin: right center;
+  transition: transform .25s ease;
+}
+
+.total-belop.plopp {
+  transform: scale(1.12);
+}
+
+@media (max-width: 680px) {
+  .handlekurv-seksjon {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .handlekurv-boks {
+    min-height: 500px;
+  }
+
+  .rad-bilde {
+    width: 52px;
+  }
+
+  .rad-beskrivelse {
+    font-size: 0.88rem;
+  }
+
+  .handlekurv-tittel {
+    font-size: 1.2rem;
+  }
+}
+
+.handlekurv-feil {
+  color: #b00020;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-top: 0.4rem;
+  text-align: left;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg) translateX(0);
+  }
+
+  20% {
+    transform: rotate(-1.5deg) translateX(-2px);
+  }
+
+  40% {
+    transform: rotate(1.5deg) translateX(2px);
+  }
+
+  60% {
+    transform: rotate(-1deg) translateX(-1px);
+  }
+
+  80% {
+    transform: rotate(1deg) translateX(1px);
+  }
+
+  100% {
+    transform: rotate(0deg) translateX(0);
+  }
+}
+
+.handlekurv-boks.shake {
+  animation: shake 0.4s ease;
+}
+
+.graph-section {
+  max-width: 600px;
+  margin: 1.5rem auto;
+  padding: 0 1.5rem;
+  position: relative;
+}
+
+.graph-container {
+  position: relative;
+  width: 100%;
+}
+
+.graph-base {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.graph-overlay {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.graph-overlay img {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 1.5s ease-out 0.1s;
+}
+
+.graph-section.in-view .graph-overlay img {
+  clip-path: inset(0 0 0 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .graph-overlay img {
+    transition: none;
+  }
+}
+
+.sitat-seksjon {
+  max-width: 600px;
+  margin: 0.2rem auto;
+  padding: 0 1.5rem;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+
+.sitat-boks {
+  margin: 0;
+}
+
+.sitat-tekst {
+  position: relative;
+  padding-left: 1rem;
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #111;
+  border-left: none;
+}
+
+.sitat-tekst::before {
+  content: "";
+  position: absolute;
+  top: 7%;
+  left: 0;
+  width: 4px;
+  height: 90%;
+  background: #004952;
+}
+
+.sitat-footer {
+  font-size: 0.95rem;
+  color: #111;
+  line-height: 1.3;
+  padding-left: 1rem;
+}
+
+.sitat-navn {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0;
+}
+
+.sitat-tittel {
+  font-weight: 400;
+  color: #333;
+  display: block;
+  margin-top: 0;
+}
+
+.kurv-seksjon {
+  max-width: 560px;
+  margin: 1rem auto;
+  padding: 0 1.5rem;
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.kurv-rull {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 150px;
+  transform: translateX(0);
+}
+
+.artikkel-bilde {
+  display: block;
+  max-width: 20%;
+  margin: 2.6rem auto 0;
+  height: auto;
+}
+
+.artikkel-bilde2 {
+  display: block;
+  max-width: 60%;
+  margin: 2.6rem auto 0;
+  height: auto;
+}
+
+.artikkel-bilde3 {
+  display: block;
+  max-width: 50%;
+  margin: 4.6rem auto 0;
+  height: auto;
+}
+
+.kine {
+  margin-bottom: 70px;
+}
+
+#tallene {
+  margin-top: 60px;
+}
+
+#ssb {
+  margin-top: 30px;
+}
+
+.kurv-stack-seksjon {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+.kurv-stack {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.kurv-stack img[data-index="11"] {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.kurv-stack img:not([data-index="11"]) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.kurv-stack img {
+  transition: opacity 0.1s ease-out;
+}
+
+.faktaboks-seksjon {
+  position: relative;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.faktaboks {
+  position: relative;
+  background: #CADAF2;
+  padding: 2.5rem 2.5rem 2.5rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  max-height: 203px;
+  transition: max-height 0.6s ease;
+}
+
+.faktaboks::after {
+  display: none;
+}
+
+.faktaboks.åpen::after {
+  display: none;
+}
+
+.faktaboks.åpen {
+  max-height: 1000px;
+}
+
+.faktaboks h3 {
+  color: #004952;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.faktaboks ul {
+  margin: 0.5rem 0;
+  padding-left: 1.2rem;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.faktaboks .kilde {
+  font-size: 0.85rem;
+  color: #333;
+  margin-top: 1rem;
+}
+
+.faktaboks-knapp {
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.6rem 1.5rem;
+  background: #004952;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.faktaboks-knapp:hover {
+  background: #007a78;
+}
+
+
+@media (max-width: 600px) {
+  .faktaboks {
+    max-height: 205px;
+  }
+}
+
+.etikett-seksjon {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+.etikett-wrapper {
+  position: relative;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.etikett-bilde {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.etikett-pris {
+  position: absolute;
+  top: 32%;
+  left: 12%;
+  display: flex;
+  align-items: flex-start;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #232823;
+}
+
+.etikett-main {
+  font-size: 5.6rem;
+  line-height: 1;
+}
+
+.etikett-decimal {
+  font-size: 3.0rem;
+  margin-left: 1.5rem;
+  margin-top: -6px;
+  align-self: flex-start;
+}
+
+@media (max-width: 600px) {
+  .etikett-pris {
+    top: 34%;
+    left: 13%;
+  }
+
+  .etikett-main {
+    font-size: 3.8rem;
+  }
+
+  .etikett-decimal {
+    font-size: 2.2rem;
+    margin-left: 1.1rem;
+  }
+}
+
+.kvittering-seksjon {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+.kvittering-container {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 0;
+}
+
+.kvittering-bilde {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.kilder-seksjon {
+  max-width: 600px;
+  margin: 5rem auto 3rem;
+  padding: 0 1.5rem;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.kilder-tittel {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  color: #004952;
+  position: relative;
+  padding-top: 1.5rem;
+}
+
+.kilder-tittel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #C6D4E9;
+  border-radius: 2px;
+}
+
+.kilder-liste p {
+  margin: 1.2rem 0;
+}
+
+.kilder-liste a {
+  color: #204F91;
+  font-weight: 500;
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 2px;
+}
+
+.kilder-liste a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 1px;
+  background: #204F91;
+  transition: width 0.3s ease;
+}
+
+.kilder-liste a:hover::after {
+  width: 100%;
+}
+
+.kilder-tekst {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}

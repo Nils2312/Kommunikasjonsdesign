@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NRK Spesial – Artikkel</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="article-header">
+    <div class="header-image">
+      <img src="filer/overskrift.png" alt="Artikkeloverskrift">
+
+      <div class="price-labels">
+        <div class="price price-top" data-base="24.99" data-speed="0.020">
+          <span class="main">24</span><span class="decimal">,99</span>
+        </div>
+        <div class="price price-bottom" data-base="44.99" data-speed="0.040">
+          <span class="main">44</span><span class="decimal">,99</span>
+        </div>
+      </div>
+    </div>
+    <div class="byline">
+      <p><span class="name"><br><br><br><br><br><br><br><br>NILS KRISTIAN BJØRO</span>, utvikling, design & reportasjeleder</p>
+      <p><span class="name">LUCAS ALEXANDER ERIKSEN KJÆR</span>, journalist</p>
+      <p><span class="name">ISAK HANSEN BARABAD</span>, journalist</p>
+      <p><span class="name">TOMASZ GAJOS</span>, researchansvarlig</p>
+      <p class="date"><br><br><br><br><br><br>15. oktober 2025</p><br><br><br><br>
+    </div>
+
+    <section class="article-section">
+      <p>
+        Prisene i butikkene har steget kraftig de siste årene. Den samme handlekurven som tidligere var en selvfølge,
+        koster nå langt mer.
+      </p>
+      <p>
+        Forskjellen blir tydelig når vi ser på utviklingen over tid.
+      </p>
+    </section>
+  </header>
+
+  <main>
+    <section class="article-section">
+      <h2>Tacoen ble dyrere</h2>
+      <p>
+        Statistisk sentralbyrå (SSB) har laget en egen «tacoindeks» som måler prisutviklingen
+        på vanlige taco-ingredienser – som kjøttdeig, ost, grønnsaker, rømme og tacosaus.
+      </p>
+      <p>
+        Fra 2015 til 2025 har indeksen vist en markant vekst, og fredagstacoen koster nå langt mer enn før.
+      </p>
+    </section>
+
+    <div class="receipt-toggle">
+      <button data-year="2015">2015</button>
+      <button data-year="2025">2025</button>
+    </div>
+
+    <section class="receipt-section">
+      <div class="receipt-wrapper">
+        <img src="filer/kvittering.webp" alt="Kvittering">
+
+        <div class="receipt-content">
+          <div class="item">
+            <span class="name">Kjøttdeig (400 g)</span>
+            <span class="receipt-price" data-2015="52" data-2025="80.20">52,00 kr</span>
+          </div>
+          <div class="item">
+            <span class="name">Tortillalefser (350 g)</span>
+            <span class="receipt-price" data-2015="17.50" data-2025="19.43">17,50 kr</span>
+          </div>
+          <div class="item">
+            <span class="name">Rømme (300 g)</span>
+            <span class="receipt-price" data-2015="15" data-2025="21.90">15,00 kr</span>
+          </div>
+          <div class="item">
+            <span class="name">Tacosaus (225 g)</span>
+            <span class="receipt-price" data-2015="6.75" data-2025="18.60">6,75 kr</span>
+          </div>
+          <div class="item">
+            <span class="name">Mais (200 g)</span>
+            <span class="receipt-price" data-2015="12" data-2025="12.69">12,00 kr</span>
+          </div>
+          <div class="item">
+            <span class="name">Ost (200 g)</span>
+            <span class="receipt-price" data-2015="20" data-2025="37.90">20,00 kr</span>
+          </div>
+          <div class="item">
+            <span class="name">Agurk (200 g)</span>
+            <span class="receipt-price" data-2015="14" data-2025="26.90">14,00 kr</span>
+          </div>
+          <div class="item">
+            <span class="name">Tomat (200 g)</span>
+            <span class="receipt-price" data-2015="8" data-2025="10.00">8,00 kr</span>
+          </div>
+          <div class="item">
+            <span class="name">Salat (200 g)</span>
+            <span class="receipt-price" data-2015="8" data-2025="24.90">8,00 kr</span>
+          </div>
+          <div class="item">
+            <span class="name">Tacokrydder (25 g)</span>
+            <span class="receipt-price" data-2015="8" data-2025="10.90">8,00 kr</span>
+          </div>
+
+          <div class="total">
+            <span class="name">TOTALT</span>
+            <span class="receipt-price total-price" data-2015="161.25" data-2025="263.42">161,25 kr</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <p class="receipt-source">Kilde: SSB (2015) og Oda (2025)</p>
+
+    <section class="article-section">
+      <h2>Hva får du egentlig for 200 kroner?</h2>
+      <p>
+        Prisnivået har skutt fart, og dermed varer ikke pengene like lenge som tidligere.
+      </p>
+      <p>
+        Tenk deg at du har 200 kroner til å handle inn middag – holder det til en vanlig middag?
+      </p>
+    </section>
+
+    <section class="handlekurv-seksjon">
+      <div class="handlekurv-boks">
+        <div class="handlekurv-topp">
+          <h3 class="handlekurv-tittel">
+            Produkt i handlekurv: <span class="handlekurv-antall">1</span>
+          </h3>
+          <div class="handlekurv-feil" aria-live="polite"></div>
+        </div>
+
+        <div class="kurv-liste" id="kurvListe">
+          <article class="rad rad--kurv" data-navn="laks" data-belop="159">
+            <div class="rad-venstre">
+              <img src="filer/laks.png" alt="Laks" class="rad-bilde" />
+              <div class="rad-tekst">
+                <span class="rad-belop">159 kr</span>
+                <span class="rad-beskrivelse">Naturell laks 500 g</span>
+              </div>
+            </div>
+            <button class="knapp knapp--fjern" type="button">Fjern</button>
+          </article>
+        </div>
+
+        <div class="forslag">
+          <h4 class="forslag-tittel">Vil du legge til flere produkter?</h4>
+
+          <article class="rad" data-navn="poteter" data-belop="23">
+            <div class="rad-venstre">
+              <img src="filer/poteter.png" alt="Poteter" class="rad-bilde" />
+              <div class="rad-tekst">
+                <span class="rad-belop">23 kr</span>
+                <span class="rad-beskrivelse">Poteter</span>
+              </div>
+            </div>
+            <button class="knapp knapp--leggtil" type="button">Legg til</button>
+          </article>
+
+          <article class="rad" data-navn="saus" data-belop="29">
+            <div class="rad-venstre">
+              <img src="filer/saus.png" alt="Hollandaise Saus" class="rad-bilde" />
+              <div class="rad-tekst">
+                <span class="rad-belop">29 kr</span>
+                <span class="rad-beskrivelse">Hollandaise Saus</span>
+              </div>
+            </div>
+            <button class="knapp knapp--leggtil" type="button">Legg til</button>
+          </article>
+
+          <article class="rad" data-navn="brokkoli" data-belop="19">
+            <div class="rad-venstre">
+              <img src="filer/brokolli.png" alt="Brokkoli" class="rad-bilde" />
+              <div class="rad-tekst">
+                <span class="rad-belop">19 kr</span>
+                <span class="rad-beskrivelse">Brokkoli</span>
+              </div>
+            </div>
+            <button class="knapp knapp--leggtil" type="button">Legg til</button>
+          </article>
+
+          <article class="rad" data-navn="sitron" data-belop="11">
+            <div class="rad-venstre">
+              <img src="filer/sitron.png" alt="Sitron" class="rad-bilde" />
+              <div class="rad-tekst">
+                <span class="rad-belop">11 kr</span>
+                <span class="rad-beskrivelse">Sitron</span>
+              </div>
+            </div>
+            <button class="knapp knapp--leggtil" type="button">Legg til</button>
+          </article>
+        </div>
+
+        <div class="handlekurv-total">
+          <span class="total-tekst">Totalt:</span>
+          <span class="total-belop" id="totalBelop">159 kr</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-section">
+      <p>
+        Selv en enkel hverdagsmiddag kan spise opp større deler av budsjettet enn før. Hvordan havnet vi her?
+      </p>
+    </section>
+
+    <section class="article-section">
+      <h2>Prisene har steget kraftig</h2>
+      <p>
+        Matprisene har økt i mange år, men etter 2021 tok utviklingen ekstra fart.
+        Grafen under viser hvordan prisene har endret seg siden 2015.
+      </p>
+    </section>
+
+    <section class="graph-section">
+      <div class="graph-container">
+        <img src="filer/graf.png" alt="Graf bakgrunn" class="graph-base">
+        <div class="graph-overlay">
+          <img src="filer/grafstrek.png" alt="Graf strek">
+        </div>
+      </div>
+    </section>
+
+    <section class="article-section2">
+      <p>
+        Grafen viser utviklingen i norske matpriser fra 2015 til 2025.<br>
+        Indeksen starter på 100 i 2015 og ender litt over 140 i 2025 – noe som betyr at matvarer i snitt har blitt mer
+        enn 40 prosent dyrere på ti år.
+      </p>
+    </section>
+
+    <section class="sitat-seksjon" id="ssb">
+      <blockquote class="sitat-boks">
+        <p class="sitat-tekst">
+          – Vi måler prisutviklingen gjennom konsumprisindeksen (KPI), som viser hvordan
+          prisene på ulike varer og tjenester utvikler seg over tid.
+        </p>
+        <footer class="sitat-footer">
+          <span class="sitat-navn">Preben Aursand</span>
+          <span class="sitat-tittel">Seniorrådgiver, SSB</span>
+        </footer>
+      </blockquote>
+    </section>
+
+    <section class="article-section2" id="tallene">
+      <p>
+        Tallene viser at mat er blitt betydelig dyrere de siste årene.
+        Men hva er det som egentlig driver utviklingen?
+      </p>
+    </section>
+
+    <section class="kurv-seksjon">
+      <img src="filer/kurv.webp" alt="Handlekurv" class="kurv-rull" />
+    </section>
+
+    <section class="article-section">
+      <h1>Derfor har prisene økt</h1>
+      <p>
+        Prisene i matbutikken styres ikke bare av én ting, men av mange faktorer som virker samtidig.
+        <br><br>
+        Når kostnadene øker i flere ledd samtidig – fra råvarer til energi og transport – blir maten i butikkene
+        dyrere. <br><br>
+        Flere forhold har presset kostnadene oppover de siste årene. Noen av dem merkes lokalt, andre kommer utenfra.
+      </p>
+    </section>
+
+    <section class="article-section">
+      <h2>Råvarer og krig</h2>
+      <p>
+        Råvarer er selve grunnmuren i matproduksjonen. Når korn, soya eller gjødsel blir dyrere, øker prisen i hele
+        kjeden – fra bonden til butikken.
+      </p>
+      <img src="filer/flagg.png" alt="Flagg" class="artikkel-bilde">
+      <p class="gap-tekst">
+        Krigen i Ukraina og mer ekstremvær har presset prisene opp, og urolige markeder har gjort handelen både dyrere
+        og mer usikker. Ukraina og Russland er store eksportører av korn og gjødsel, og usikkerhet i markedene gjør at
+        hele kjeden påvirkes.
+      </p>
+    </section>
+    <section class="sitat-seksjon">
+      <blockquote class="sitat-boks">
+        <p class="sitat-tekst">
+          – Internasjonale forhold og økte råvarepriser, blant annet som følge av ekstremvær,
+          er sentrale årsaker til at matprisene har økt.
+        </p>
+        <footer class="sitat-footer">
+          <span class="sitat-navn">Knut Lutnæs</span>
+          <span class="sitat-tittel">Seniorrådgiver kommunikasjon og myndighetskontakt, Coop</span>
+        </footer>
+      </blockquote>
+    </section>
+
+    <section class="article-section">
+      <h2>Strøm og energi</h2>
+      <p>
+        Strøm påvirker mer enn bare regningen hjemme. Når energiprisene stiger, blir det dyrere å produsere, lagre og
+        kjøle ned maten – og å frakte den videre til butikkene.
+      </p>
+      <img src="filer/power.png" alt="Strøm" class="artikkel-bilde">
+      <p>
+        De siste årene har strømprisene ført til langt høyere kostnader for både matindustrien og dagligvarekjedene.
+      </p>
+    </section>
+
+    <section class="article-section">
+      <h2>Drivstoff og transportkostnader</h2>
+      <p>
+        Når bensin og diesel blir dyrere, øker også prisen på å frakte varer til butikkene.
+      </p>
+      <img src="filer/drivstoff.png" alt="Drivstoff" class="artikkel-bilde">
+      <p>
+        Etter pandemien har transportkostnadene steget kraftig, og det har presset prisene opp.
+      </p>
+    </section>
+
+    <section class="article-section">
+      <h2>Svak krone</h2>
+      <p>
+        En svak norsk krone gjør at importerte varer blir dyrere. Når vi kjøper råvarer eller ferdigvarer fra
+        utlandet, må vi betale mer fordi kronen har mindre verdi.
+      </p>
+      <img src="filer/krone.png" alt="Krone" class="artikkel-bilde">
+      <p class="gap-tekst">
+        Dette er en viktig årsak til at prisene har økt de siste årene.
+      </p>
+    </section>
+    <section class="sitat-seksjon">
+      <blockquote class="sitat-boks">
+        <p class="sitat-tekst">
+          – Den svake kronen gjør at vi må betale mer for mat og råvarer vi importerer.
+          Det bidrar til at prisene i butikkene presses opp.
+        </p>
+        <footer class="sitat-footer kine">
+          <span class="sitat-navn">Kine Søyland</span>
+          <span class="sitat-tittel">Kommunikasjonssjef, Norgesgruppen ASA</span>
+        </footer>
+      </blockquote>
+    </section>
+
+    <section class="kurv-stack-seksjon">
+      <div class="kurv-stack">
+        <img src="filer/kurv11.png" alt="Kurv 11" class="kurv-bilde" data-index="11">
+        <img src="filer/kurv10.png" alt="Kurv 10" class="kurv-bilde" data-index="10">
+        <img src="filer/kurv9.png" alt="Kurv 9" class="kurv-bilde" data-index="9">
+        <img src="filer/kurv8.png" alt="Kurv 8" class="kurv-bilde" data-index="8">
+        <img src="filer/kurv7.png" alt="Kurv 7" class="kurv-bilde" data-index="7">
+        <img src="filer/kurv6.png" alt="Kurv 6" class="kurv-bilde" data-index="6">
+        <img src="filer/kurv5.png" alt="Kurv 5" class="kurv-bilde" data-index="5">
+        <img src="filer/kurv4.png" alt="Kurv 4" class="kurv-bilde" data-index="4">
+        <img src="filer/kurv3.png" alt="Kurv 3" class="kurv-bilde" data-index="3">
+        <img src="filer/kurv2.png" alt="Kurv 2" class="kurv-bilde" data-index="2">
+        <img src="filer/kurv1.png" alt="Kurv 1" class="kurv-bilde" data-index="1">
+      </div>
+    </section>
+
+    <section class="article-section">
+      <h2>Alt henger sammen</h2>
+      <p>
+        Det er ikke én enkelt forklaring på hvorfor matprisene har steget – men summen av mange faktorer.
+        <br><br>
+        Resultatet merkes først ved kassen. Små kostnadsøkninger i hvert ledd blir til en langt dyrere handlekurv for
+        forbrukeren.
+      </p>
+    </section>
+
+    <section class="sitat-seksjon">
+      <blockquote class="sitat-boks">
+        <p class="sitat-tekst">
+          – Hovedårsaken til at matvareprisene har økt de senere årene er at kostnadene har økt i alle ledd av
+          verdikjeden – fra dyrere energi og råvarer, til økte transportutgifter, svakere kronekurs og høyere
+          kostnader
+          i foredling og distribusjon.
+        </p>
+        <footer class="sitat-footer">
+          <span class="sitat-navn">Kine Søyland</span>
+          <span class="sitat-tittel kine">Kommunikasjonssjef, Norgesgruppen ASA</span>
+        </footer>
+      </blockquote>
+    </section>
+
+    <section class="faktaboks-seksjon">
+      <div class="faktaboks">
+        <h3>Hvilke matvarer har økt mest i pris?</h3>
+        <ul>
+          <li>Kokesjokolade: 48,4 prosent</li>
+          <li>Melis og kandissukker: 41,1 prosent</li>
+          <li>Ketchup og sennep: 22,5 prosent</li>
+          <li>Ris: 18,8 prosent</li>
+          <li>Annen fersk fisk: 18 prosent</li>
+          <li>Egg: 17,9 prosent</li>
+          <li>Sukker, farin og raffinade: 14,9 prosent</li>
+          <li>Mel: 14,4 prosent</li>
+          <li>Olivenolje: 13,3 prosent</li>
+          <li>Fersk torsk: 12,9 prosent</li>
+          <li>Kakao og sjokoladepulver: 12 prosent</li>
+          <li>Juice og nektar: 11,9 prosent</li>
+          <li>Kål: 11,7 prosent</li>
+          <li>Smør: 11,6 prosent</li>
+          <li>Pølser: 11 prosent</li>
+          <li>Hermetisk sjømat/sjømat i lake: 10,8 prosent</li>
+          <li>Fryst torsk: 10,5 prosent</li>
+          <li>Supper og kraft: 10,3 prosent</li>
+        </ul>
+        <p class="kilde">Tallene viser prisvekst på utvalgte matvarer fra februar 2024 til februar 2025, basert på
+          konsumprisindeksen (KPI) fra Statistisk sentralbyrå (SSB).</p>
+      </div>
+      <button class="faktaboks-knapp">Vis mer</button>
+    </section>
+
+    <section class="article-section">
+      <h1>Hva skjer fremover?</h1>
+    </section>
+
+    <section class="etikett-seksjon">
+      <div class="etikett-wrapper">
+        <img src="filer/etikett.png" alt="Etikett" class="etikett-bilde">
+        <div class="etikett-pris">
+          <span class="etikett-main" id="etikett1">2</span>
+          <span class="etikett-main" id="etikett2">4</span>
+          <span class="etikett-decimal" id="etikettDec">99</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-section">
+      <p class="gap-tekst">
+        Vi tok kontakt med de store aktørene i dagligvarehandelen og spurte hva de tror om framtiden for matprisene.
+      </p>
+    </section>
+
+    <section class="sitat-seksjon">
+      <blockquote class="sitat-boks">
+        <p class="sitat-tekst">
+          – Av konkurransehensyn kan vi ikke si noe om framtidige priser. Coop eies av 2,6 millioner
+          medlemmer og gjør det vi kan for å holde prisene nede.
+        </p>
+        <footer class="sitat-footer">
+          <span class="sitat-navn">Knut Lutnæs</span>
+          <span class="sitat-tittel">Seniorrådgiver kommunikasjon og myndighetskontakt, Coop</span>
+        </footer>
+      </blockquote>
+    </section>
+
+    <section class="article-section">
+      <p class="gap-tekst">
+        Prisnivået framover avhenger av mange usikre faktorer – som valuta, energi, råvarer og transport.
+        Selv små endringer kan gi store utslag i handlekurven.
+      </p>
+      <img src="filer/mat.png" alt="Mat" class="artikkel-bilde2">
+    </section>
+
+    <section class="sitat-seksjon">
+      <blockquote class="sitat-boks">
+        <p class="sitat-tekst">
+          – Vi kan ikke spå noe om fremtidig prising, men NorgesGruppen jobber hardt med å holde kostnadene nede,
+          slik at prisøkningene skal bli så lave som mulig.
+        </p>
+        <footer class="sitat-footer">
+          <span class="sitat-navn">Kine Søyland</span>
+          <span class="sitat-tittel">Kommunikasjonssjef, Norgesgruppen ASA</span>
+        </footer>
+      </blockquote>
+    </section>
+
+    <section class="article-section">
+      <p class="gap-tekst">
+        Selv om ingen tør å love noe, er budskapet klart: matprisene kan bli værende på et høyt nivå i lang tid
+        framover.
+      </p>
+      <img src="filer/gilde.png" alt="Gilde Kjøttdeig" class="artikkel-bilde3">
+    </section>
+
+    <section class="article-section">
+      <h2>Hva betyr det for deg?</h2>
+      <p>
+        Når kostnadene øker i hele verdikjeden, blir forskjellen synlig i det øyeblikket du står ved kassen. <br>
+        Handlekurven blir tyngre – men posen tynnere.
+        <br> <br>
+        For deg som forbruker betyr det at 200 kroner i dag gir deg langt mindre mat enn før. Kvitteringen har blitt
+        lengre, selv om posen er blitt lettere.
+      </p>
+    </section>
+
+    <section class="kvittering-seksjon">
+      <div class="kvittering-container">
+        <img src="filer/langkvittering.webp" alt="Lang kvittering" class="kvittering-bilde">
+      </div>
+    </section>
+
+    <section class="article-section">
+      <p>
+        Matprisene rammer hardest dem som har minst å gå på – studenter, barnefamilier og pensjonister.
+        <br> <br>
+        Den samme handlekurven koster mer – og for mange har den blitt tyngre å bære.
+      </p>
+    </section>
+
+    <section class="faktaboks-seksjon">
+      <div class="faktaboks">
+        <h3>Slik har vi brukt tallene</h3>
+        <ul>
+          <li>Prisen for 2015 er hentet fra tacoindeksen til Statistisk sentralbyrå (SSB),
+            basert på estimerte ingredienspriser i 2015.</li>
+
+          <li>Prisen for 2025 er hentet fra Oda per 02.10.2025, der vi bruker de billigste
+            eller mest sammenlignbare produktene som matcher mengdene i SSB-oppskriften.</li>
+
+          <li>Den interaktive handlekurven er basert på priser hentet fra Oda per 02.10.2025,
+            og prisene kan endre seg.</li>
+
+          <li>Grafen over utviklingen i matpriser fra 2015 til 2025 er basert på
+            konsumprisindeksen (KPI) for matvarer og alkoholfrie drikkevarer fra Statistisk
+            sentralbyrå (SSB), der 2015 er satt til indeks 100.</li>
+
+          <li>Listen over matvarene som har økt mest i pris er hentet fra Aftenposten
+            (10.03.2025) og viser prisvekst fra februar 2024 til februar 2025 basert
+            på SSBs konsumprisindeks (KPI).</li>
+
+          <li>Sammenligningene er ment å illustrere hvordan en middag eller handlekurv
+            blir dyrere over tid, og er ikke en eksakt prisoversikt for alle butikker.</li>
+        </ul>
+      </div>
+      <button class="faktaboks-knapp">Vis mer</button>
+    </section>
+
+    <section class="kilder-seksjon">
+      <h2 class="kilder-tittel">Kilder</h2>
+
+      <div class="kilder-liste">
+        <p>
+          <a href="https://www.ssb.no/priser-og-prisindekser/konsumpriser/statistikk/konsumprisindeksen"
+            target="_blank">
+            Konsumprisindeksen – SSB
+          </a>
+        </p>
+        <p>
+          <a href="https://www.ssb.no/priser-og-prisindekser/konsumpriser/artikler/tacoindeksen" target="_blank">
+            Tacoindeksen – SSB
+          </a>
+        </p>
+      </div>
+
+      <p class="kilder-tekst">
+        Alle sitatene i artikkelen er reelle. Vi har sendt henvendelser til Coop, NorgesGruppen og SSB,
+        og fått skriftlig bekreftelse på at svarene kan brukes i denne sammenhengen.
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
